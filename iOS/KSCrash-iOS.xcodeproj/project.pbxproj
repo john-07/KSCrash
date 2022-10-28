@@ -1144,7 +1144,7 @@
 		CBF53D9017EB765C0056DA83 /* NSMutableData+AppendUTF8.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableData+AppendUTF8.m"; path = "../../Source/KSCrash/Reporting/Tools/NSMutableData+AppendUTF8.m"; sourceTree = "<group>"; };
 		DCA19E2B18817AD100DCA792 /* KSCrashReportFilterAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFilterAlert.h; path = ../../Source/KSCrash/Reporting/Filters/KSCrashReportFilterAlert.h; sourceTree = "<group>"; };
 		DCA19E2E18817BA200DCA792 /* KSCrashReportFilterSets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSCrashReportFilterSets.h; path = ../../Source/KSCrash/Reporting/Filters/KSCrashReportFilterSets.h; sourceTree = "<group>"; };
-		EDF2BF211CCF15AD004BADF4 /* KSCrash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDF2BF211CCF15AD004BADF4 /* KSCrashStatic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KSCrashStatic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDF2BF281CCF1A27004BADF4 /* KSCrash_static-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KSCrash_static-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1208,7 +1208,7 @@
 				CB6D132617EB749A00BC2C04 /* libKSCrashLib.a */,
 				CB6D133317EB749A00BC2C04 /* KSCrashTests.xctest */,
 				03DE7B6A1C84DEF700F789BA /* KSCrash.framework */,
-				EDF2BF211CCF15AD004BADF4 /* KSCrash.framework */,
+				EDF2BF211CCF15AD004BADF4 /* KSCrashStatic.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2033,7 +2033,7 @@
 			);
 			name = KSCrash_static;
 			productName = KSCrashFramework;
-			productReference = EDF2BF211CCF15AD004BADF4 /* KSCrash.framework */;
+			productReference = EDF2BF211CCF15AD004BADF4 /* KSCrashStatic.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -2047,6 +2047,7 @@
 				TargetAttributes = {
 					03DE7B691C84DEF700F789BA = {
 						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 1400;
 					};
 					CB6D133217EB749A00BC2C04 = {
 						TestTargetID = CB6D132517EB749A00BC2C04;
@@ -2510,6 +2511,8 @@
 		03DE7B6F1C84DEF800F789BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -2533,6 +2536,7 @@
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2542,6 +2546,8 @@
 		03DE7B701C84DEF800F789BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
@@ -2565,6 +2571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
 				PRODUCT_NAME = KSCrash;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -2751,6 +2758,7 @@
 		CB6D134617EB749A00BC2C04 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -2772,6 +2780,7 @@
 		CB6D134717EB749A00BC2C04 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -2810,7 +2819,7 @@
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_NAME = KSCrashStatic;
 				SKIP_INSTALL = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2844,7 +2853,7 @@
 				MODULEMAP_FILE = ../Source/Framework/module.modulemap;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = org.stenerud.KSCrash;
-				PRODUCT_NAME = KSCrash;
+				PRODUCT_NAME = KSCrashStatic;
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
