@@ -242,32 +242,24 @@
 		6E889F76F8DCC4749067A458 /* KSCxaThrowSwapper.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E889A12BAE413442C0DA527 /* KSCxaThrowSwapper.c */; };
 		97BB896B26337E2B008ED481 /* Platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB895A26337E2B008ED481 /* Platform.h */; };
 		97BB896C26337E2B008ED481 /* Demangler.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB895B26337E2B008ED481 /* Demangler.h */; };
-		97BB896D26337E2B008ED481 /* StandardTypesMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = 97BB895C26337E2B008ED481 /* StandardTypesMangling.def */; };
 		97BB896E26337E2B008ED481 /* STLExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB895D26337E2B008ED481 /* STLExtras.h */; };
 		97BB896F26337E2B008ED481 /* Visibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB895E26337E2B008ED481 /* Visibility.h */; };
-		97BB897026337E2B008ED481 /* DemangleNodes.def in Resources */ = {isa = PBXBuildFile; fileRef = 97BB895F26337E2B008ED481 /* DemangleNodes.def */; };
 		97BB897126337E2B008ED481 /* OldDemangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896026337E2B008ED481 /* OldDemangler.cpp */; };
 		97BB897226337E2B008ED481 /* Demangler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896126337E2B008ED481 /* Demangler.cpp */; };
 		97BB897326337E2B008ED481 /* Config.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB896226337E2B008ED481 /* Config.h */; };
-		97BB897426337E2B008ED481 /* ValueWitnessMangling.def in Resources */ = {isa = PBXBuildFile; fileRef = 97BB896326337E2B008ED481 /* ValueWitnessMangling.def */; };
 		97BB897526337E2B008ED481 /* Context.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896426337E2B008ED481 /* Context.cpp */; };
 		97BB897626337E2B008ED481 /* ManglingUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896526337E2B008ED481 /* ManglingUtils.cpp */; };
 		97BB897726337E2B008ED481 /* ManglingUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB896626337E2B008ED481 /* ManglingUtils.h */; };
 		97BB897826337E2B008ED481 /* NodePrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896726337E2B008ED481 /* NodePrinter.cpp */; };
-		97BB897926337E2B008ED481 /* ReferenceStorage.def in Resources */ = {isa = PBXBuildFile; fileRef = 97BB896826337E2B008ED481 /* ReferenceStorage.def */; };
 		97BB897A26337E2B008ED481 /* ManglingMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB896926337E2B008ED481 /* ManglingMacros.h */; };
 		97BB897B26337E2B008ED481 /* SwiftDemangle.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BB896A26337E2B008ED481 /* SwiftDemangle.h */; };
 		97BB898726337EE2008ED481 /* Config.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896226337E2B008ED481 /* Config.h */; };
-		97BB898826337EE2008ED481 /* DemangleNodes.def in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895F26337E2B008ED481 /* DemangleNodes.def */; };
 		97BB898926337EE2008ED481 /* Demangler.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895B26337E2B008ED481 /* Demangler.h */; };
 		97BB898A26337EE2008ED481 /* ManglingMacros.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896926337E2B008ED481 /* ManglingMacros.h */; };
 		97BB898B26337EE2008ED481 /* ManglingUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896626337E2B008ED481 /* ManglingUtils.h */; };
 		97BB898C26337EE2008ED481 /* Platform.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895A26337E2B008ED481 /* Platform.h */; };
-		97BB898D26337EE2008ED481 /* ReferenceStorage.def in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896826337E2B008ED481 /* ReferenceStorage.def */; };
-		97BB898E26337EE2008ED481 /* StandardTypesMangling.def in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895C26337E2B008ED481 /* StandardTypesMangling.def */; };
 		97BB898F26337EE3008ED481 /* STLExtras.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895D26337E2B008ED481 /* STLExtras.h */; };
 		97BB899026337EE3008ED481 /* SwiftDemangle.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896A26337E2B008ED481 /* SwiftDemangle.h */; };
-		97BB899126337EE3008ED481 /* ValueWitnessMangling.def in Sources */ = {isa = PBXBuildFile; fileRef = 97BB896326337E2B008ED481 /* ValueWitnessMangling.def */; };
 		97BB899226337EE3008ED481 /* Visibility.h in Sources */ = {isa = PBXBuildFile; fileRef = 97BB895E26337E2B008ED481 /* Visibility.h */; };
 		97BB899326337EE3008ED481 /* Demangle.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F161C5AF2B10083A11B /* Demangle.h */; };
 		97BB899426337EE3008ED481 /* DemangleNodes.h in Sources */ = {isa = PBXBuildFile; fileRef = CBC43F171C5AF2B10083A11B /* DemangleNodes.h */; };
@@ -2081,10 +2073,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97BB897426337E2B008ED481 /* ValueWitnessMangling.def in Resources */,
-				97BB897926337E2B008ED481 /* ReferenceStorage.def in Resources */,
-				97BB897026337E2B008ED481 /* DemangleNodes.def in Resources */,
-				97BB896D26337E2B008ED481 /* StandardTypesMangling.def in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2114,16 +2102,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97BB898726337EE2008ED481 /* Config.h in Sources */,
-				97BB898826337EE2008ED481 /* DemangleNodes.def in Sources */,
 				97BB898926337EE2008ED481 /* Demangler.h in Sources */,
 				97BB898A26337EE2008ED481 /* ManglingMacros.h in Sources */,
 				97BB898B26337EE2008ED481 /* ManglingUtils.h in Sources */,
 				97BB898C26337EE2008ED481 /* Platform.h in Sources */,
-				97BB898D26337EE2008ED481 /* ReferenceStorage.def in Sources */,
-				97BB898E26337EE2008ED481 /* StandardTypesMangling.def in Sources */,
 				97BB898F26337EE3008ED481 /* STLExtras.h in Sources */,
 				97BB899026337EE3008ED481 /* SwiftDemangle.h in Sources */,
-				97BB899126337EE3008ED481 /* ValueWitnessMangling.def in Sources */,
 				97BB899226337EE3008ED481 /* Visibility.h in Sources */,
 				97BB899326337EE3008ED481 /* Demangle.h in Sources */,
 				97BB899426337EE3008ED481 /* DemangleNodes.h in Sources */,
